@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listado de Anuncios</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/listado-anuncios.css" />
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="./index.html" class="navbar-logo-link">
+          <h1>Marketplace</h1>
+        </a>
+      </div>
+      <div class="navbar-user">
+        <button id="login-btn" class="login-icon">
+          <img src="./assets/icons/user-plus-solid.svg" alt="Usuario" width="28" height="28">
+        </button>
+        <div class="login-dropdown-content" id="userMenu"></div>
+      </div>
+      <button id="navbar-toggle-btn" class="navbar-toggle-label">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <div class="navbar-search">
+        <input type="text" id="searchInput" class="navbar-input" placeholder="Buscar anuncios...">
+        <button type="button" id="searchBtn" class="navbar-search-btn">
+          <img src="./assets/icons/magnifying-glass-solid.svg" alt="Buscar" width="20" height="20"
+            style="filter: brightness(0) invert(1);">
+        </button>
+        <div id="searchError" class="search-error"></div>
+      </div>
+      <div class="desktop-actions">
+        <a href="/frontend/pages/login.html" class="navbar-link">Iniciar sesión</a>
+        <a href="/frontend/pages/register.html" class="navbar-link">Registrarse</a>
+      </div>
+
+    </div>
+    <div class="navbar-content">
+      <div class="navbar-actions" id="navbar-actions"></div>
+      <div class="navbar-categorias">
+        <a href="/frontend/pages/listado-anuncio.html?cat=tecnologia" class="navbar-link">Tecnología</a>
+        <a href="/frontend/pages/listado-anuncio.html?cat=hogar" class="navbar-link">Hogar</a>
+        <a href="/frontend/pages/listado-anuncio.html?cat=vehiculos" class="navbar-link">Vehículos</a>
+        <a href="/frontend/pages/listado-anuncio.html?cat=moda" class="navbar-link">Moda</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="listado-container">
+  <section class="categoria-titulo">
+    <h2>Categoria</h2>
+    <div class="categorias-lista">
+      <a href="listado-anuncio.html?category_id=1" class="categoria-item">Bicicletas</a>
+      <a href="listado-anuncio.html?category_id=2" class="categoria-item">Electronica</a>
+      <a href="listado-anuncio.html?category_id=3" class="categoria-item">Vehículos</a>
+      <a href="listado-anuncio.html?category_id=4" class="categoria-item">Hogar</a>
+      <a href="listado-anuncio.html?category_id=5" class="categoria-item">Moda</a>
+    </div>
+
+   
+  </section>
+
+  <hr class="linea-separacion">
+
+  <h2 id="titulo-pagina">Resultados</h2>
+  <div class="anuncios-grid" id="resultados-ads">
+    <div class="anuncio-card">
+        <img src="./assets/img/1746893923611-Mitsubishi.png" alt="Mitsubishi" class="anuncio-image">
+        <h3 class="anuncio-title">Mitsubishi</h3>
+        <p class="anuncio-description">De medio uso, pero de mejor compañía</p>
+        <p class="anuncio-precio">Precio: Bs59000</p>
+        <p class="anuncio-vendedor">Vendedor: Anabely Chicaba</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+
+      <div class="anuncio-card">
+        <img src="./assets/img/1746894119479-adidas-samba.png" alt="Adidas Samba" class="anuncio-image">
+        <h3 class="anuncio-title">Adidas Samba</h3>
+        <p class="anuncio-description">Nuevo, en caja, más info al número 77788899</p>
+        <p class="anuncio-precio">Precio: Bs580</p>
+        <p class="anuncio-vendedor">Vendedor: Anabely Chicaba</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+
+      <div class="anuncio-card">
+        <img src="./assets/img/armario-poratil.png" alt="Armario Portátil" class="anuncio-image">
+        <h3 class="anuncio-title">Armario Portátil</h3>
+        <p class="anuncio-description">de fácil armado y uso</p>
+        <p class="anuncio-precio">Precio: Bs200</p>
+        <p class="anuncio-vendedor">Vendedor: Anabely Chicaba</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+
+      <div class="anuncio-card">
+        <img src="./assets/img/1744833081606-Hp.png" alt="Laptop Hp" class="anuncio-image">
+        <h3 class="anuncio-title">Laptop Hp</h3>
+        <p class="anuncio-description">De caja</p>
+        <p class="anuncio-precio">Precio: Bs1300</p>
+        <p class="anuncio-vendedor">Vendedor: Ronal Solíz</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+      <div class="anuncio-card">
+        <img src="./assets/img/jeans-baggy.png" alt="jeans-baggy" class="anuncio-image">
+        <h3 class="anuncio-title">jeans-baggy</h3>
+        <p class="anuncio-description">Nuevo, marca brasilera</p>
+        <p class="anuncio-precio">Precio: Bs 90</p>
+        <p class="anuncio-vendedor">Vendedor: Daira Soliz</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+      <div class="anuncio-card">
+        <img src="./assets/img/sandalias-cafe-mujer.png" alt="sandalias" class="anuncio-image">
+        <h3 class="anuncio-title">Sandalias de Muejer</h3>
+        <p class="anuncio-description">Nuevo, marca brasilera, original</p>
+        <p class="anuncio-precio">Precio: Bs 190</p>
+        <p class="anuncio-vendedor">Vendedor: Perico Perez</p>
+        <a href="./details-ads.html" class="btn-detalle">Ver más</a>
+      </div>
+  </div>
+</main>
+
+
+</body>
+
+</html>
