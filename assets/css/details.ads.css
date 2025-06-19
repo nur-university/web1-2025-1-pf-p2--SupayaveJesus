@@ -1,0 +1,129 @@
+:root {
+  --accent-green: #2a860e;
+  --dark-bg: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ccc;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ad-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--dark-bg);
+}
+
+.ad-detail__image-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.img-thumbnail {
+  max-width: 180px;
+  border: 2px solid var(--accent-green);
+  border-radius: 10px;
+}
+.feature-ads__grid,
+.download-feature,
+.relacionados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.ad-card {
+  flex: 0 1 200px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.ad-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.ad-detail__info {
+  background-color: var(--card-bg);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+}
+
+.ad-detail__info h2 {
+  font-size: 2rem;
+  color: var(--accent-green);
+  margin-bottom: 1rem;
+}
+
+.ad-detail__info .precio {
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.ad-detail__info .descripcion,
+.ad-detail__info .vendedor {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.acciones {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem; 
+  text-align: center;
+  justify-content: center;
+ 
+}
+
+
+.btn-detalle {
+  background-color: transparent;
+  color: var(--white);
+  display: flex;
+  padding: 1rem;
+  border-radius: 20%;
+  border: 1px solid var(--accent-green);
+  transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+  background-color: #1a5e0b;
+}
+
+@media (width >= 768px) {
+  .ad-detail {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ad-detail__image {
+    flex: 5;
+  }
+
+  .ad-detail__info {
+    flex: 3;
+    margin-left: 0.5rem;
+  }
+}

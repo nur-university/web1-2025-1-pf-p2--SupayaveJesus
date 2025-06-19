@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/details.ads.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="./index.html" class="navbar-logo-link">
+                    <h1>Marketplace</h1>
+                </a>
+            </div>
+            <div class="navbar-user">
+                <button id="login-btn" class="login-icon">
+                    <img src="./assets/icons/user-plus-solid.svg" alt="Usuario" width="28" height="28">
+                </button>
+                <div class="login-dropdown-content" id="userMenu"></div>
+            </div>
+            <button id="navbar-toggle-btn" class="navbar-toggle-label">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+            <div class="navbar-search">
+                <input type="text" id="searchInput" class="navbar-input" placeholder="Buscar anuncios...">
+                <button type="button" id="searchBtn" class="navbar-search-btn">
+                    <img src="./assets/icons/magnifying-glass-solid.svg" alt="Buscar" width="20" height="20"
+                        style="filter: brightness(0) invert(1);">
+                </button>
+                <div id="searchError" class="search-error"></div>
+            </div>
+            <div class="desktop-actions">
+                <a href="/frontend/pages/login.html" class="navbar-link">Iniciar sesión</a>
+                <a href="/frontend/pages/register.html" class="navbar-link">Registrarse</a>
+            </div>
+
+        </div>
+        <div class="navbar-content">
+            <div class="navbar-actions" id="navbar-actions"></div>
+            <div class="navbar-categorias">
+                <a href="/frontend/pages/listado-anuncio.html?cat=tecnologia" class="navbar-link">Tecnología</a>
+                <a href="/frontend/pages/listado-anuncio.html?cat=hogar" class="navbar-link">Hogar</a>
+                <a href="/frontend/pages/listado-anuncio.html?cat=vehiculos" class="navbar-link">Vehículos</a>
+                <a href="/frontend/pages/listado-anuncio.html?cat=moda" class="navbar-link">Moda</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="details-ads" class="container">
+        <section class="ad-detail">
+            <div class="ad-detail__image-gallery">
+                <img src="./assets/img/1746893923611-Mitsubishi.png" alt="Mitsubishi" class="img-thumbnail">
+                <img src="./assets/img/mitsubishi-back.png" alt="Mitsubishi Trasera" class="img-thumbnail">
+            </div>
+
+            <div class="ad-detail__info">
+                <h2>Mitsubishi</h2>
+                <p class="precio">Precio: $59000</p>
+                <p class="descripcion">De medio uso, pero de mejor compañía</p>
+                <p class="vendedor">Vendedor: Anabely Chicaba</p>
+
+                <div class="acciones">
+                    <button class="btn-detalle">Guardar anuncio</button>
+                    <button class="btn-detalle">Enviar mensaje</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+        <section class="feature-ads">
+            <section class="feature-ads">
+                <h3>También te puede interesar:</h3>
+                <div class="download-feature feature-ads__grid">
+                    <div class="ad-card">
+                        <img src="./assets/img/1746894119479-adidas-samba.png" alt="Adidas Samba">
+                        <h4>Adidas Samba</h4>
+                        <p>Bs 580</p>
+                        <a href="./details-ads.html">Ver más</a>
+                    </div>
+                    <div class="ad-card">
+                        <img src="./assets/img/1749469038605-bici-celeste.png" alt="Bicicleta de ocasión">
+                        <h4>Bicicleta de ocasión</h4>
+                        <p>Bs 580</p>
+                        <a href="./details-ads.html">Ver más</a>
+                    </div>
+                    <div class="ad-card">
+                        <img src="./assets/img/1744833081606-Hp.png" alt="Laptop HP">
+                        <h4>Laptop HP</h4>
+                        <p>Bs 1300</p>
+                        <a href="./details-ads.html">Ver más</a>
+                    </div>
+                    <div class="ad-card">
+                        <img src="./assets/img/1746894014499-armario-poratil.png" alt="Armario Portátil">
+                        <h4>Armario Portátil</h4>
+                        <p>Bs 200</p>
+                        <a href="./details-ads.html">Ver más</a>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </div>
+
+</body>
+
+</html>
